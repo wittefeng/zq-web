@@ -62,7 +62,7 @@ const Carousel = ({ items }: any) => {
 
   return (
     <div className="relative">
-      <div className="swiper-container w-screen h-96">
+      <div className="swiper-container w-screen h-96 overflow-hidden">
         <div className="swiper-wrapper">
           {items.map((item: any, index: any) => (
             <Link href={item.href} key={index} className="swiper-slide">
