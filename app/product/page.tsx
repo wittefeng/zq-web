@@ -201,7 +201,7 @@ const Product = () => {
                 src={item.image}
                 className="text-xl font-semibold mb-2 h-64 object-contain"
               ></img>
-              <p className="text-gray-700">{item.description}</p>
+              <p className="text-gray-700">{item.title}</p>
             </Link>
           ))}
         </div>
