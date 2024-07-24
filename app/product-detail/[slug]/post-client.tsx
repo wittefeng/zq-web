@@ -1,13 +1,10 @@
 'use client'
 
-import { usePathname } from 'next/navigation'
-import { PRODUCT_LIST } from '@/app/product/page'
 import React, { useEffect, useState } from 'react'
 
 const PostClient = (props: any) => {
   const [product, setProduct] = useState<any>(null)
   useEffect(() => {
-    console.log('PRODUCT_LIST', props)
     setProduct(props.post)
   }, [])
   // useEffect(() => {
