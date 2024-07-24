@@ -1,7 +1,8 @@
+'use client'
 import Link from 'next/link'
 import React from 'react'
-
 import PRODUCT_LIST from './product.json'
+
 const Product = () => {
   return (
     <div style={{ width: '58.8rem' }} className="text-cyan-700">

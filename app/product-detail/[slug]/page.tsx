@@ -1,3 +1,4 @@
+'use client'
 import PRODUCT_LIST from '../../product/product.json'
 import PostClient from './post-client'
 
