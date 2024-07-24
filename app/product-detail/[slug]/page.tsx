@@ -4,7 +4,7 @@ import PostClient from './post-client'
 // 获取数据
 async function getPost(params: { slug: any }) {
   console.log('params', params.slug)
-  const PRODUCT_LIST = [
+  const product_list = [
     {
       id: 'phoenix',
       image: '/phoenix-instrument.png',
@@ -150,7 +150,7 @@ async function getPost(params: { slug: any }) {
       description: '质谱仪器配件和周边设备'
     }
   ]
-  return PRODUCT_LIST.find((product: any) => product.id === params.slug)
+  return product_list.find((product: any) => product.id === params.slug)
 }
 
 export default async function ProductDetail({ params }: any) {

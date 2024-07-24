@@ -3,7 +3,7 @@ import Link from 'next/link'
 import React from 'react'
 
 const Product = () => {
-  const PRODUCT_LIST = [
+  const product_list = [
     {
       id: 'phoenix',
       image: '/phoenix-instrument.png',
@@ -167,7 +167,7 @@ const Product = () => {
       </div>
       <div className="container mx-auto pt-2">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-          {PRODUCT_LIST.map((item: any) => (
+          {product_list.map((item: any) => (
             <Link
               href={'/product-detail/' + item.id}
               key={item.id}
